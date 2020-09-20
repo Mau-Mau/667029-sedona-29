@@ -1,0 +1,263 @@
+:root { /*нумерация от светлых к темным*/
+	--peach: #F4B1A4;
+
+	--light-orange: #F49774;
+	--orange: #DC6243;
+
+	--red: #FF0000;
+	--dark-red-cherry: #491213;
+		
+
+	--white: #FFFFFF;
+	--white-advant-1: rgba(255, 255, 255, 0.1);
+	--white-advant-3: rgba(255, 255, 255, 0.3);
+
+
+	--more-light-black: #333333;
+	--light-black: #231F20;
+	--black: #000000;
+	--black-advant: rgba(0, 0, 0, 0.3);
+
+
+	--blue: #23A9E1;
+
+
+	--light-gray-blue-lighter: #81B3D3;
+	--light-gray-blue: #81B3D2;
+
+
+	--gray-blue-lighter: #669EC0;
+	--gray-blue: #5496BD;
+
+
+	--light-gray-very-light: #F2F2F2;
+	--light-gray-lighter: #EEEEEE;
+	--light-gray: #EBEBEB;
+	--light-gray-darker: #E5E5E5;
+	--light-gray-very-dark: #CACACA;
+
+	--gray-lighter: #BDBBBC;
+	--gray: #A9A9A9;
+	--gray-darker: #ABABAB;
+
+	--dark-gray-lighter: #6A6A6A;
+	--dark-gray: #666666;
+
+
+	--brown-lighter: #766458;
+	--brown: #766357;
+	--brown-darker: #604E43;
+
+	--dark-brown: #503E33;
+}
+
+/*общее*/
+
+.page-body { 
+	background-color: var(--white);
+	color: var(--black);
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-weight: normal;
+  text-align: center;
+  text-transform: uppercase;
+  width: 1200px;
+  
+}
+
+.link {
+	color: var(--black);
+	text-decoration: none;
+	
+}
+
+/*заголовок*/
+
+.header {
+
+}
+
+.navigation { 
+
+}
+
+.link-logo { 
+	background-color: var(--light-gray-blue-lighter);
+}
+
+.site-navigation { /*меню*/
+	font-size: 14px;
+	font-weight: bold;
+	line-height: 26px;
+	}
+
+.list {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	
+}
+
+.site-navigation-item-left {
+	text-align: left;
+}
+
+.site-navigation-item-left:hover {
+		color: var(--light-gray-blue);
+}
+
+.site-navigation-item-left:active {
+		color: var(--black-advant);
+}
+
+.site-navigation-item-right {
+	text-align: right;
+}
+
+.site-navigation-item-right:hover {
+		color: var(--light-gray-blue);
+}
+
+.site-navigation-item-right:active {
+		color: var(--black-advant);
+}
+
+/*основой контент*/
+
+.wrapper {
+
+}
+
+.hidden { /*прячем заголовки, не указанные в макете*/
+
+}
+
+.reason {
+
+}
+
+.reason-header-title {
+	font-size: 21px;
+	font-weight: bold;
+	line-height: 26px;
+}
+
+.reason-header-description {
+	font-size: 14px;
+	line-height: 26px;
+}
+
+.reason-list {
+	list-style-type: none;
+}
+
+.reason-invert {
+	background-color: var(--light-gray-blue);
+	color: var(--white);
+}
+
+.reason-title {
+	font-size: 21px;
+	font-weight: bold;
+	line-height: 21px;	
+}
+
+.reason-descripton {
+	font-size: 14px;
+	line-height: 21px;
+}
+
+.search-hotel {
+
+}
+
+.search-hotel-title {
+	font-size: 30px;
+	font-weight: bold;
+	line-height: 24px;
+}
+
+.search-hotel-description {
+	font-size: 14px;
+	line-height: 21px;
+}
+
+.button-action {
+	background-color: var(--brown);
+	border: none;
+	color: var(--white);
+	font-size: 21px;
+	line-height: 26px;
+	 
+}
+
+.button-action:hover {
+	background-color: var(--brown-darker);
+	outline: none;
+}
+
+.button-action:active {
+	background-color: var(--dark-brown);
+	outline: none;
+	color: var(--white-advant-3);
+}
+
+/*форма поиска*/
+
+.search-form {
+
+}
+
+.button-info {
+	background-color: var(--light-gray-blue);
+	border: none;
+	color: var(--white);
+	font-size: 21px;
+	line-height: 26px;
+	 
+}
+
+.button-info:hover {
+	outline: none;
+}
+
+.button-info:active {
+	outline: none;
+}
+
+/*подвал*/
+
+.footer {
+
+}
+
+.footer-contact {
+	font-size: 21px;
+	font-weight: bold;
+	line-height: 26px;
+}
+
+.footer-social {
+
+}
+
+.footer-social-button {
+	list-style-type: none;
+}
+
+.social-button {
+	background-color: var(--light-gray-blue);
+}
+
+.social-button:hover {
+	background-color: var(--gray-blue-lighter);
+}
+
+.social-button:active {
+	background-color: var(--gray-blue);
+	color: var(--white-advant-3);
+}
+
+.footer-developed-by {
+	font-size: 14px;
+	line-height: 26px;
+}
