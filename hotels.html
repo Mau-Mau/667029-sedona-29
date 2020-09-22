@@ -10,152 +10,149 @@
   	<link href="css/style.css" rel="stylesheet">
   </head>
 
-  <body>
-
-  	<header>
-  		<nav>
-  			<a>
+  <body class="page-body">
+  	<header class="header">
+  		<nav class="navigation">
+  			<a class="link-logo link">
   				<img src="#" alt="Логотип сервиса по бронированию гостиниц в Седоне" width="138" height="70"> <!-- будет логотип -->
   			</a>
-  			<ul>
-	  			<li><a href="blank.html">Информация</a></li>
-	 				<li><a href="blank.html">Фото и видео</a></li>
-	  			<li><a href="blank.html">Карта штата</a></li>
-	  			<li><a href="hotels.html">Гостиницы</a></li>
+  			<ul class="site-navigation list">
+	  			<li><a href="blank.html" class="site-navigation-item-left link">Информация</a></li>
+	 				<li><a href="blank.html" class="site-navigation-item-left link">Фото и видео</a></li>
+	  			<li><a href="blank.html" class="site-navigation-item-right link">Карта штата</a></li>
+	  			<li><a href="hotels.html" class="site-navigation-item-right link current-page">Гостиницы</a></li>
 				</ul>
 			</nav>
   	</header>
 
-  	<main>
+  	<main class="wrapper">
 
-  		<h1>Гостиницы в Седоне</h1>
+  		<h1 class="hidden">Гостиницы в Седоне</h1>
 
-  		<section> 
-  			<h2>Фильтр поиска гостиниц</h2>
+  		<section class="search-filter"> 
+  			<h2 class="hidden">Фильтр поиска гостиниц</h2>
   			<img src="#" alt="Пейзаж вблизи Седоны"> 
   			<form>
   				<!-- будет форма с фильтром -->
   			</form>
   		</section>
   		
-  		<section>
-  			<h2>Количество найденных гостиниц и параметры сортировки</h2>
-  			<p>Найдено: 3</p>
-  			<p>Сортировка</p>
-  			<ul>
+  		<section class="search-found-parameter">
+  			<h2 class="hidden">Количество найденных гостиниц и параметры сортировки</h2>
+  			<p class="search-header">Найдено: 3</p>
+  			<p class="search-description">Сортировка</p>
+  			<ul class="list">
   				<li>
-				    <a href="#">По цене</a> 
+				    <a href="#" class="link search-parameter current-search">По цене</a>
 				  </li>
 				  <li>
-				    <a href="#">По типу</a> 
+				    <a href="#" class="link search-parameter">По типу</a> 
 				  </li>
 				  <li>
-				    <a href="#">По рейтингу</a> 
+				    <a href="#" class="link search-parameter">По рейтингу</a> 
 				  </li>
   			</ul>
-  			<ul>
+  			<ul class="list">
 				  <li>
-				    <a href="#">По возрастанию</a> <!-- будет замена на иконку -->
+				    <a href="#" class="link sort-parameter">По возрастанию</a> <!-- будет замена на иконку -->
 				  </li>
 				  <li>
-				    <a href="#">По убыванию</a> <!-- будет замена на иконку -->
+				    <a href="#" class="link sort-parameter current-sort">По убыванию</a> <!-- будет замена на иконку -->
 				  </li>
 				 </ul>
   		</section>
 
   		<section>
-  			<h2>Список гостиниц</h2>
-  			<ul>
+  			<h2 class="hidden">Список гостиниц</h2>
+  			<ul class="list">
 		      <li>
-		        <a href="blank.html">
-		          <h3>Amara Resort & SPA</h3>
+		        <a href="blank.html" class="link">
+		          <h3 class="search-title">Amara Resort & SPA</h3>
 		          <img src="#" width="135" height="90" alt="Вид на гостиницу Amara resort & SPA">
 		        </a>
-		        <p>
+		        <p class="search-description">
 		        	Гостиница
-		        	<a href="blank.html">Подробнее</a>
+		        	<a href="blank.html" class="link button-info search-description">Подробнее</a>
 		        </p>
-		        <p>
+		        <p class="search-description">
 		          От 4000 р.
-		          <button type="button">Забронировать</button>
+		          <button type="button" class="button-action search-description">Забронировать</button>
 		        </p>
-		        <p>
+		        <p class="star">
 		        	Четыре звезды <!-- будет замена на иконку -->
 		        </p>
-		        <p>Рейтинг: 8,5</p>
+		        <p class="rating search-description">Рейтинг: 8,5</p>
 		      </li>
 		      <li>
-		        <a href="blank.html">
-		          <h3>Desert Quail Inn</h3>
+		        <a href="blank.html" class="link">
+		          <h3 class="search-title">Desert Quail Inn</h3>
 		          <img src="#" width="135" height="90" alt="Вид на гостиницу Desert Quail Inn">
 		        </a>
-		        <p>
+		        <p class="search-description">
 		        	Мотель
-		        	<a href="blank.html">Подробнее</a>
+		        	<a href="blank.html" class="link button-info search-description">Подробнее</a>
 		        </p>
-		        <p>
+		        <p class="search-description">
 		          От 3000 р.
-		          <button type="button">Забронировать</button>
+		          <button type="button" class="button-action search-description">Забронировать</button>
 		        </p>
-		        <p>
+		        <p class="star">
 		        	Три звезды <!-- будет замена на иконку -->
 		        </p>
-		        <p>Рейтинг: 8,9</p>
+		        <p class="rating search-description">Рейтинг: 8,9</p>
 		      </li>
 		      <li>
-		        <a href="blank.html">
-		          <h3>Villas at Poco Diablo</h3>
+		        <a href="blank.html" class="link">
+		          <h3 class="search-title">Villas at Poco Diablo</h3>
 		          <img src="#" width="135" height="90" alt="Вид на гостиницу Villas at Poco Diablo">
 		        </a>
-		        <p>
+		        <p class="search-description">
 		        	Апартаменты
-		        	<a href="blank.html">Подробнее</a>
+		        	<a href="blank.html" class="link button-info search-description">Подробнее</a>
 		        </p>
-		        <p>
+		        <p class="search-description">
 		          От 2000 р.
-		          <button type="button">Забронировать</button>
+		          <button type="button" class="button-action search-description">Забронировать</button>
 		        </p>
-		        <p>
+		        <p class="star">
 		        	Две звезды <!-- будет замена на иконку -->
 		        </p>
-		        <p>Рейтинг: 9,2</p>
+		        <p class="rating search-description">Рейтинг: 9,2</p>
 		      </li>
 		    </ul>
   		</section>
 
   	</main>
 
-  	<footer>
+  	<footer class="footer">
+  		<h2 class="hidden">Информация о сервисе по бронированию гостиниц</h2>
 
-  		<h2>Информация о сервисе по бронированию гостиниц</h2>
-
-  		<section>
-  			<h3>Связь с сервисом</h3>
-  			<a href="#">#visitsedona</a>
-  			<a href="tel:+74956660166">тел: +7(495) 666-01-66</a>
+  		<section class="footer-contact">
+  			<h3 class="hidden">Связь с сервисом</h3>
+  			<a href="#" class="link">#visitsedona</a>
+  			<a href="tel:+74956660166" class="link">тел: +7(495) 666-01-66</a>
   		</section>
 
-  		<section>
-  			<h3>Социальные сети</h3>
-  			<ul>
+  		<section class="footer-social">
+  			<h3 class="hidden">Социальные сети</h3>
+  			<ul class="footer-social-button list">
 				  <li>
-				    <a href="#">Вконтакте</a> <!-- будет замена на иконку -->
+				    <a href="#" class="social-button link">Вконтакте</a> <!-- будет замена на иконку -->
 				  </li>
 				  <li>
-				    <a href="#">Фейсбук</a> <!-- будет замена на иконку -->
+				    <a href="#" class="social-button link">Фейсбук</a> <!-- будет замена на иконку -->
 				  </li>
 				  <li>
-				    <a href="#">Ютуб</a> <!-- будет замена на иконку -->
+				    <a href="#" class="social-button link">Ютуб</a> <!-- будет замена на иконку -->
 				  </li>
 				</ul>
   		</section>
 
-  		<section>
-  			<h3>Информация о разработчике</h3>
+  		<section class="footer-developed-by">
+  			<h3 class="hidden">Информация о разработчике</h3>
   			<p>website by</p>
-  			<a href="#">HTML Academy</a> <!-- будет замена на иконку -->
+  			<a href="https://htmlacademy.ru/intensive/htmlcss" class="link">HTML Academy</a> <!-- будет замена на иконку -->
   		</section>
-
   	</footer>
 
   </body>

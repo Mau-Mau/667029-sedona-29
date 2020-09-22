@@ -16,7 +16,7 @@
 	--more-light-black: #333333;
 	--light-black: #231F20;
 	--black: #000000;
-	--black-advant: rgba(0, 0, 0, 0.3);
+	--black-advant-3: rgba(0, 0, 0, 0.3);
 
 
 	--blue: #23A9E1;
@@ -58,7 +58,7 @@
 	color: var(--black);
   font-family: "PT Sans", "Arial", sans-serif;
   font-weight: normal;
-  text-align: center;
+  margin: auto;
   text-transform: uppercase;
   width: 1200px;
   
@@ -70,7 +70,7 @@
 	
 }
 
-/*заголовок*/
+/*заголовок и меню*/
 
 .header {
 
@@ -84,7 +84,7 @@
 	background-color: var(--light-gray-blue-lighter);
 }
 
-.site-navigation { /*меню*/
+.site-navigation {
 	font-size: 14px;
 	font-weight: bold;
 	line-height: 26px;
@@ -97,6 +97,10 @@
 	
 }
 
+.current-page { /*обозначение текущей страницы в меню*/
+	color: var(--brown);
+}
+
 .site-navigation-item-left {
 	text-align: left;
 }
@@ -106,7 +110,7 @@
 }
 
 .site-navigation-item-left:active {
-		color: var(--black-advant);
+		color: var(--black-advant-3);
 }
 
 .site-navigation-item-right {
@@ -118,7 +122,7 @@
 }
 
 .site-navigation-item-right:active {
-		color: var(--black-advant);
+		color: var(--black-advant-3);
 }
 
 /*основой контент*/
@@ -133,9 +137,9 @@
 
 .reason {
 
-}
+} 
 
-.reason-header-title {
+.reason-header-title, .search-title, .search-header {
 	font-size: 21px;
 	font-weight: bold;
 	line-height: 26px;
@@ -181,13 +185,67 @@
 	line-height: 21px;
 }
 
+.search-filter {
+	background-color: var(--gray-darker);
+}
+
+.search-found-parameter {
+
+}
+
+.search-description {
+	font-size: 12px;
+	line-height: 18px;
+}
+
+.search-parameter {
+	border-bottom: 1px dashed var(--light-gray-blue);
+	color: var(--black-advant-3);
+	font-size: 12px;
+	line-height: 18px;
+}
+
+.search-parameter:hover {
+	color: var(--light-gray-blue);
+}
+
+.search-parameter:active {
+	border-bottom: none;
+	color: var(--black);
+}
+
+.current-search {
+	border-bottom: none;
+	color: var(--light-gray-blue);
+}
+
+.sort-parameter {
+	color: var(--light-gray-very-dark);
+}
+
+.sort-parameter:hover {
+	color: var(--black);
+}
+
+.sort-parameter:active {
+	color: var(--light-gray-blue);
+}
+
+.current-sort{
+	color: var(--light-gray-blue);
+}
+
+/*кнопки*/
+
 .button-action {
 	background-color: var(--brown);
 	border: none;
 	color: var(--white);
 	font-size: 21px;
+	font-weight: bold;
 	line-height: 26px;
-	 
+	outline: none;
+	text-transform: uppercase;
 }
 
 .button-action:hover {
@@ -197,8 +255,8 @@
 
 .button-action:active {
 	background-color: var(--dark-brown);
-	outline: none;
 	color: var(--white-advant-3);
+	outline: none;
 }
 
 /*форма поиска*/
@@ -207,21 +265,52 @@
 
 }
 
+.search-title {
+
+}
+
+.search-title:hover {
+	color: var(--light-gray-blue);
+}
+
+.search-title:active {
+	color: var(--black-advant-3);
+}
+
 .button-info {
 	background-color: var(--light-gray-blue);
 	border: none;
 	color: var(--white);
 	font-size: 21px;
+	font-weight: bold;
 	line-height: 26px;
-	 
+	text-transform: uppercase;
 }
 
 .button-info:hover {
+	background-color: var(--gray-blue-lighter);
 	outline: none;
 }
 
 .button-info:active {
+	background-color: var(--gray-blue);
+	color: var(--white-advant-3);
 	outline: none;
+}
+
+.search-description {
+	font-size: 14px;
+	line-height: 21px;
+}
+
+.star {
+	color: var(--light-gray-blue);
+}
+
+.rating {
+	background-color: var(--light-gray-very-light);
+	border: none;
+	color: var(--dark-gray);
 }
 
 /*подвал*/
@@ -260,4 +349,10 @@
 .footer-developed-by {
 	font-size: 14px;
 	line-height: 26px;
+}
+
+
+
+.reason, .search-hotel, .footer {
+	text-align: center;
 }
