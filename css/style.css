@@ -61,7 +61,7 @@
   margin: auto;
   text-transform: uppercase;
   width: 1200px;
-  
+
 }
 
 .link {
@@ -81,7 +81,7 @@
 }
 
 .link-logo { 
-	background-color: var(--light-gray-blue-lighter);
+	
 }
 
 .site-navigation {
@@ -123,6 +123,10 @@
 
 .site-navigation-item-right:active {
 		color: var(--black-advant-3);
+}
+
+.header-title {
+	background-color: var(--black);
 }
 
 /*основой контент*/
@@ -316,7 +320,7 @@
 /*подвал*/
 
 .footer {
-
+	background-color: var(--white-advant-3);
 }
 
 .footer-contact {
@@ -350,9 +354,12 @@
 	font-size: 14px;
 	line-height: 26px;
 }
+/*
+.logo-developed-by {
+	background-image: url("img/logo-htmlacademy-base.svg");
+}
 
-
-
+*/
 .reason, .search-hotel, .footer {
 	text-align: center;
 }
