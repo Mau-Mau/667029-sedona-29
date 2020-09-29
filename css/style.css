@@ -9,8 +9,8 @@
 		
 
 	--white: #FFFFFF;
-	--white-advant-1: rgba(255, 255, 255, 0.1);
-	--white-advant-3: rgba(255, 255, 255, 0.3);
+	--white-advant-1: rgba(255, 255, 255, 0.9);
+	--white-advant-3: rgba(255, 255, 255, 0.7);
 
 
 	--more-light-black: #333333;
@@ -58,36 +58,49 @@
 	color: var(--black);
   font-family: "PT Sans", "Arial", sans-serif;
   font-weight: normal;
-  margin: auto;
+  margin: 0 auto;
+  padding: 0;
   text-transform: uppercase;
   width: 1200px;
-
+  box-shadow: 5px 5px 5px 5px #333333;
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr;
+  grid-template-columns: 1200px;
 }
 
 .link {
 	color: var(--black);
 	text-decoration: none;
-	
 }
 
 /*заголовок и меню*/
 
 .header {
-
+	grid-row-start: 1;
+	grid-row-end: 2;
+	grid-column-start: 1;
+	grid-column-end: 2;
 }
 
 .navigation { 
-
+	display:grid;
+	grid-template-rows: 56px;
 }
 
 .link-logo { 
-	
+	order: 1;
+	grid-row-start: 1;
+	grid-row-end: 2;
+	position: absolute;
 }
 
 .site-navigation {
 	font-size: 14px;
 	font-weight: bold;
 	line-height: 26px;
+	display:grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
 	}
 
 .list {
@@ -125,25 +138,51 @@
 		color: var(--black-advant-3);
 }
 
-.header-title {
-	background-color: var(--black);
+.item-info {
+	grid-column: 1;
+}
+
+.item-photo-video {
+	grid-column: 2;
+}
+
+.item-map {
+	grid-column: 3;
+}
+
+.item-hotel {
+	grid-column: 4;
 }
 
 /*основой контент*/
 
 .wrapper {
-
+	grid-row-start: 2;
+	grid-row-end: 3;
+	grid-column-start: 1;
+	grid-column-end: 2;
+	display: grid;
+	grid-template-rows: min-content min-content 
+	min-content min-content;
 }
 
 .hidden { /*прячем заголовки, не указанные в макете*/
+	display: none;
+}
 
+.header-title {
+	background-color: var(--gray-blue);
 }
 
 .reason {
-
+	grid-row: 1;
 } 
 
-.reason-header-title, .search-title, .search-header {
+.reason-header {
+	grid-row: 2;
+}
+
+.reason-header-title, .hotel-title, .search-header {
 	font-size: 21px;
 	font-weight: bold;
 	line-height: 26px;
@@ -156,11 +195,74 @@
 
 .reason-list {
 	list-style-type: none;
+	grid-row: 3;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 586px min-content 256px;
 }
 
 .reason-invert {
 	background-color: var(--light-gray-blue);
 	color: var(--white);
+}
+
+.reason-list-item {
+
+}
+
+.item-city {
+	grid-row: 1;
+	grid-column-start:1;
+	grid-column-end: 4;
+	}
+
+.item-city-text {
+
+}
+
+.item-city-picture {
+
+}
+
+.item-bridge {
+	grid-row: 2;
+	grid-column-start:1;
+	grid-column-end: 4;
+	display: grid;
+	grid-template-columns: 800px 1fr;
+	grid-template-rows: min-content;
+}
+
+.item-bridge-foto {
+	grid-column-start: 1;
+	grid-column-end: 3;
+	grid-row-start: 1;
+	grid-row-end: 2;
+}
+
+.item-bridge-text {
+	grid-column-start: 3;
+	grid-column-end: 4;
+	grid-row-start: 1;
+	grid-row-end: 2;
+}
+
+.item-area {
+	grid-row: 3;
+	grid-column-start: 1;
+	grid-column-end: 2;
+}
+
+.item-road {
+	grid-row: 3;
+	grid-column-start: 2;
+	grid-column-end: 3;
+}
+
+.item-tourists {
+	grid-row: 3;
+	grid-column-start: 3;
+	grid-column-end: 4;
 }
 
 .reason-title {
@@ -175,7 +277,13 @@
 }
 
 .search-hotel {
+	grid-row: 2;
+	display: grid;
+	grid-template-rows: 205px 86px 594px;
+}
 
+.search-text {
+	grid-row: 1;
 }
 
 .search-hotel-title {
@@ -189,8 +297,20 @@
 	line-height: 21px;
 }
 
+.search-button {
+	grid-row: 2;
+}
+
+.search-map {
+	grid-row: 3;
+}
+
 .search-filter {
 	background-color: var(--gray-darker);
+}
+
+.hotel-search-filter {
+
 }
 
 .search-found-parameter {
@@ -266,18 +386,18 @@
 /*форма поиска*/
 
 .search-form {
+	grid-row: 3;
+}
+
+.hotel-title {
 
 }
 
-.search-title {
-
-}
-
-.search-title:hover {
+.hotel-title:hover {
 	color: var(--light-gray-blue);
 }
 
-.search-title:active {
+.hotel-title:active {
 	color: var(--black-advant-3);
 }
 
@@ -321,16 +441,25 @@
 
 .footer {
 	background-color: var(--white-advant-3);
+	grid-row-start: 2;
+	grid-row-end: 3;
+	grid-column-start: 1;
+	grid-column-end: 2;
+	align-self: end;
+	z-index: 1;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
 }
 
 .footer-contact {
 	font-size: 21px;
 	font-weight: bold;
 	line-height: 26px;
+	grid-column: 1;
 }
 
 .footer-social {
-
+	grid-column: 2;
 }
 
 .footer-social-button {
@@ -353,6 +482,7 @@
 .footer-developed-by {
 	font-size: 14px;
 	line-height: 26px;
+	grid-column: 3;
 }
 /*
 .logo-developed-by {
