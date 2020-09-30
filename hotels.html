@@ -16,12 +16,13 @@
   			<a  href="index.html" class="link-logo link">
   				<img src="img/logo-sedona.svg" alt="Логотип сервиса по бронированию гостиниц в Седоне" width="138" height="70">
   			</a>
+
   			<ul class="site-navigation list">
-	  			<li><a href="blank.html" class="site-navigation-item-left link">Информация</a></li>
-	 				<li><a href="blank.html" class="site-navigation-item-left link">Фото и видео</a></li>
-	  			<li><a href="blank.html" class="site-navigation-item-right link">Карта штата</a></li>
-	  			<li><a href="hotels.html" class="site-navigation-item-right link current-page">Гостиницы</a></li>
-				</ul>
+	  			<li><a href="blank.html" class="item-info link">Информация</a></li>
+	 				<li><a href="blank.html" class="item-photo-video link">Фото и видео</a></li>
+	  			<li><a href="blank.html" class="item-map link">Карта штата</a></li>
+	  			<li><a href="hotels.html" class="item-hotel link current-page">Гостиницы</a></li>
+	  		</ul>
 			</nav>
   	</header>
 
@@ -41,19 +42,21 @@
   		<section class="search-found-parameter">
   			<h2 class="hidden">Количество найденных гостиниц и параметры сортировки</h2>
   			<p class="search-header">Найдено: 3</p>
-  			<p class="search-description">Сортировка</p>
-  			<ul class="list">
-  				<li>
-				    <a href="#" class="link search-parameter current-search">По цене</a>
-				  </li>
-				  <li>
-				    <a href="#" class="link search-parameter">По типу</a> 
-				  </li>
-				  <li>
-				    <a href="#" class="link search-parameter">По рейтингу</a> 
-				  </li>
-  			</ul>
-  			<ul class="list">
+  			<div class="search-parameter-summary">
+	  			<p class="search-description">Сортировка</p>
+	  			<ul class="list">
+	  				<li>
+					    <a href="#" class="link search-parameter current-search">По цене</a>
+					  </li>
+					  <li>
+					    <a href="#" class="link search-parameter">По типу</a> 
+					  </li>
+					  <li>
+					    <a href="#" class="link search-parameter">По рейтингу</a> 
+					  </li>
+	  			</ul>
+	  		</div>
+  			<ul class="list sort-up-down">
 				  <li>
 				    <a href="#" class="link sort-parameter">По возрастанию</a> <!-- будет замена на иконку -->
 				  </li>
@@ -65,12 +68,12 @@
 
   		<section>
   			<h2 class="hidden">Список гостиниц</h2>
-  			<ul class="list">
-		      <li>
+  			<ul class="list list-of-hotels">
+		      <li class="item-first-hotel">
 		        <a href="blank.html" class="link">
 		          <h3 class="hotel-title">Amara Resort & SPA</h3>
-		          <img src="img/preview-amara-resort-spa.jpg" width="135" height="90" alt="Вид на гостиницу Amara resort & SPA">
 		        </a>
+		        <img src="img/preview-amara-resort-spa.jpg" width="135" height="90" alt="Вид на гостиницу Amara resort & SPA">
 		        <p class="search-description">
 		        	Гостиница
 		        	<a href="blank.html" class="link button-info search-description">Подробнее</a>
@@ -84,11 +87,11 @@
 		        </p>
 		        <p class="rating search-description">Рейтинг: 8,5</p>
 		      </li>
-		      <li>
+		      <li class="item-second-hotel">
 		        <a href="blank.html" class="link">
 		          <h3 class="hotel-title">Desert Quail Inn</h3>
-		          <img src="img/preview-desert-quail-inn.jpg" width="135" height="90" alt="Вид на гостиницу Desert Quail Inn">
 		        </a>
+		        <img src="img/preview-desert-quail-inn.jpg" width="135" height="90" alt="Вид на гостиницу Desert Quail Inn">
 		        <p class="search-description">
 		        	Мотель
 		        	<a href="blank.html" class="link button-info search-description">Подробнее</a>
@@ -102,11 +105,11 @@
 		        </p>
 		        <p class="rating search-description">Рейтинг: 8,9</p>
 		      </li>
-		      <li>
+		      <li class="item-third-hotel">
 		        <a href="blank.html" class="link">
 		          <h3 class="hotel">Villas at Poco Diablo</h3>
-		          <img src="img/preview-villas-at-poco-diablo.jpg" width="135" height="90" alt="Вид на гостиницу Villas at Poco Diablo">
 		        </a>
+		        <img src="img/preview-villas-at-poco-diablo.jpg" width="135" height="90" alt="Вид на гостиницу Villas at Poco Diablo">
 		        <p class="search-description">
 		        	Апартаменты
 		        	<a href="blank.html" class="link button-info search-description">Подробнее</a>
@@ -120,6 +123,7 @@
 		        </p>
 		        <p class="rating search-description">Рейтинг: 9,2</p>
 		      </li>
+		      <li class="item-invisible"></li>
 		    </ul>
   		</section>
 

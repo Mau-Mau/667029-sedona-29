@@ -20,10 +20,10 @@
 	  		</div>
 
   			<ul class="site-navigation list">
-	  			<li><a href="blank.html" class="site-navigation-item-left item-info link">Информация</a></li>
-	 				<li><a href="blank.html" class="site-navigation-item-left item-photo-video link">Фото и видео</a></li>
-	  			<li><a href="blank.html" class="site-navigation-item-right item-map link">Карта штата</a></li>
-	  			<li><a href="hotels.html" class="site-navigation-item-right item-hotel link">Гостиницы</a></li>
+	  			<li><a href="blank.html" class="item-info link">Информация</a></li>
+	 				<li><a href="blank.html" class="item-photo-video link">Фото и видео</a></li>
+	  			<li><a href="blank.html" class="item-map link">Карта штата</a></li>
+	  			<li><a href="hotels.html" class="item-hotel link">Гостиницы</a></li>
 	  		</ul>
 	  	</nav>
   	</header>
@@ -35,7 +35,7 @@
   			<h2 class="hidden">Перечень причин посетить Седону</h2>
 
   			<div class="header-title" background-image="#"> <!-- будет фоновая картинка с горами -->
-  				<img src="img/header-welcome-to-sedona.svg" width="456.65" height="350.88" alt="Добро пожаловать в прекрасную Седону. Потому что Гранд-Каньон ничто!">
+  				<img src="img/header-welcome-to-sedona.svg" class="header-title" width="456.65" height="350.88" alt="Добро пожаловать в прекрасную Седону. Потому что Гранд-Каньон ничто!">
   			</div>
 
   			<div class="reason-header">
@@ -45,15 +45,13 @@
 
   			<ul class="reason-list list">
   				<li class="item-city">
-	  				<div class="reason-invert">
+	  				<div class="reason-invert item-city-summary">
 	  					<div class="reason-list-item item-city-text">
 	  						<h3 class="reason-title">Настоящий городок</h3>
 	  						<p class="reason-description">- №1 -</p>
 	  						<p class="reason-description">Седона - не аттракцион для туристов, там течет своя жизнь</p>
 	  					</div>
-	  					<div class="item-city-picture">
-	  						<img src="img/sedona-view.jpg" height="256" width="800" alt="Вид городка Седона">
-	  					</div>
+	  					<img src="img/sedona-view.jpg" class="item-city-picture" height="256" width="800" alt="Вид городка Седона">
 	  				</div>
   					<ul class="reason-list list">
   						<li>
@@ -78,9 +76,7 @@
   				</li>
 
  					<li class="reason-invert item-bridge">
- 						<div class="item-bridge-foto">
- 							<img src="img/diablo-bridge-view.jpg" height="256" width="800" alt="Вид на мост Дьявола">
- 						</div>
+ 						<img src="img/diablo-bridge-view.jpg" class="item-bridge-photo" height="256" width="800" alt="Вид на мост Дьявола">
  						<div class="reason-list-item item-bridge-text">
 	 						<h3 class="reason-title">Там есть мост дьявола</h3>
 	  					<p class="reason-description">- №2 -</p>
@@ -123,9 +119,7 @@
 	  		<div class="search-button">
   				<a href="#" class="link button-action">Поиск гостиницы в Седоне</a>
   			</div>
-  			<div class="search-map">
-  				<img src="img/map.png" alt="Карта с указанием местоположения Седоны" width="1200" height="594">
-  			</div>
+  			<img src="img/map.png" class="search-map" alt="Карта с указанием местоположения Седоны" width="1200" height="594">
    			<form class="search-form">
   				<!-- будет форма поиска гостиниц; блок с классом button-info -->
   			</form>
@@ -135,13 +129,17 @@
   	<footer class="footer">
   		<h2 class="hidden">Информация о сервисе по бронированию гостиниц</h2>
 
-  		<section class="footer-contact">
+  		<div class="footer-contact">
   			<h3 class="hidden">Связь с сервисом</h3>
-  			<a href="#" class="link">#visitsedona</a>
-  			<a href="tel:+74956660166" class="link">тел: +7(495) 666-01-66</a>
-  		</section>
+  			<p>
+  				<a href="#" class="link">#visitsedona</a>
+  			</p>
+  			<p> 
+  				тел: <a href="tel:+74956660166" class="link">+7(495) 666-01-66</a>
+  			</p>
+  		</div>
 
-  		<section class="footer-social">
+  		<div class="footer-social">
   			<h3 class="hidden">Социальные сети</h3>
   			<ul class="footer-social-button list">
 				  <li>
@@ -154,13 +152,13 @@
 				    <a href="#" class="social-button link">Ютуб</a> <!-- будет замена на иконку -->
 				  </li>
 				</ul>
-  		</section>
+  		</div>
 
-  		<section class="footer-developed-by">
+  		<div class="footer-developed-by">
   			<h3 class="hidden">Информация о разработчике</h3>
   			<p>website by</p>
   			<a href="https://htmlacademy.ru/intensive/htmlcss" class="link" >HTML Academy</a> <!-- будет замена на иконку -->
-  		</section>
+  		</div>
   	</footer>
   </body>
 </html>
