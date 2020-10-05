@@ -20,10 +20,10 @@
 	  		</div>
 
   			<ul class="site-navigation list">
-	  			<li><a href="blank.html" class="item-info link">Информация</a></li>
-	 				<li><a href="blank.html" class="item-photo-video link">Фото и видео</a></li>
-	  			<li><a href="blank.html" class="item-map link">Карта штата</a></li>
-	  			<li><a href="hotels.html" class="item-hotel link">Гостиницы</a></li>
+	  			<li class="item-info"><a href="blank.html" class="link">Информация</a></li>
+	 				<li class="item-photo-video"><a href="blank.html" class="link">Фото и видео</a></li>
+	  			<li class="item-map"><a href="blank.html" class="link">Карта штата</a></li>
+	  			<li class="item-hotel"><a href="hotels.html" class="link">Гостиницы</a></li>
 	  		</ul>
 	  	</nav>
   	</header>
@@ -35,7 +35,9 @@
   			<h2 class="hidden">Перечень причин посетить Седону</h2>
 
   			<div class="header-title" background-image="#"> <!-- будет фоновая картинка с горами -->
-  				<img src="img/header-welcome-to-sedona.svg" class="header-title" width="456.65" height="350.88" alt="Добро пожаловать в прекрасную Седону. Потому что Гранд-Каньон ничто!">
+  				<div class="header-title-mask" src="img/mountain-view-mask.svg">
+  					<img src="img/header-welcome-to-sedona.svg" class="header-title-text" width="456.65" height="350.88" alt="Добро пожаловать в прекрасную Седону. Потому что Гранд-Каньон ничто!">
+  				</div>
   			</div>
 
   			<div class="reason-header">
@@ -131,10 +133,10 @@
 
   		<div class="footer-contact">
   			<h3 class="hidden">Связь с сервисом</h3>
-  			<p>
+  			<p class="hashtag">
   				<a href="#" class="link">#visitsedona</a>
   			</p>
-  			<p> 
+  			<p class="telephone"> 
   				тел: <a href="tel:+74956660166" class="link">+7(495) 666-01-66</a>
   			</p>
   		</div>
@@ -142,22 +144,24 @@
   		<div class="footer-social">
   			<h3 class="hidden">Социальные сети</h3>
   			<ul class="footer-social-button list">
-				  <li>
-				    <a href="#" class="social-button link">Вконтакте</a> <!-- будет замена на иконку -->
+				  <li class="social-button">
+				    <a href="#" class="link">Вконтакте</a> <!-- будет замена на иконку -->
 				  </li>
-				  <li>
-				    <a href="#" class="social-button link">Фейсбук</a> <!-- будет замена на иконку -->
+				  <li class="social-button">
+				    <a href="#" class="link">Фейсбук</a> <!-- будет замена на иконку -->
 				  </li>
-				  <li>
-				    <a href="#" class="social-button link">Ютуб</a> <!-- будет замена на иконку -->
+				  <li class="social-button">
+				    <a href="#" class="link">Ютуб</a> <!-- будет замена на иконку -->
 				  </li>
 				</ul>
   		</div>
 
   		<div class="footer-developed-by">
   			<h3 class="hidden">Информация о разработчике</h3>
-  			<p>website by</p>
-  			<a href="https://htmlacademy.ru/intensive/htmlcss" class="link" >HTML Academy</a> <!-- будет замена на иконку -->
+  			<p class="copyright">website by</p>
+  			<p class="copyright-link">
+  				<a href="https://htmlacademy.ru/intensive/htmlcss" class="link">HTML Academy</a> <!-- будет замена на иконку -->
+  			</p>
   		</div>
   	</footer>
   </body>
