@@ -423,7 +423,7 @@
 	font-size: 14px;
 	line-height: 22px;
 	max-width: 305px;
-	margin: 0 auto 24px auto;
+	margin: 0 auto 22px auto;
 	padding: 0;
 }
 
@@ -468,7 +468,7 @@
 }
 
 .search-hotel-description:last-child {
-	margin: 0 0 46px 0;
+	margin: 0 0 44px 0;
 }
 
 .button-search {
@@ -753,7 +753,7 @@ padding: 30px 140px 30px 140px;
 	background-color: var(--white);
 	position: absolute;
 	z-index: 1;
-	transform: translateY(234px);
+	transform: translateY(232px);
 	padding: 55px;
 	box-sizing:border-box;
 }
@@ -770,6 +770,10 @@ padding: 30px 140px 30px 140px;
 	min-height: 100%;
 }
 
+.search-form-parameter {
+	width: 100%;
+}
+
 .search-parameter-group { /*ОТЛИЧНО*/
 	display: flex;
 	flex-direction: row;
@@ -777,33 +781,53 @@ padding: 30px 140px 30px 140px;
 	min-width: 100%;
 }
 
+
+
 .search-parameter-item { /*ОТЛИЧНО*/
 
 }
-/*
+
 .search-parameter-group .search-parameter-text { /*ОТЛИЧНО*/
-/*	width: 50%;
-}*/
+	min-width: 50%;
+}
 
 .background-long .input { /*ОТЛИЧНО*/
 	box-sizing: border-box;
-  width: 300px;
+  width: 346px;
   padding: 7px 50px 7px 13px;
   color: var(--black);
   border: 0;
   height: 38px;
   background-color: var(--light-gray-very-light);
+  font-weight: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  text-transform: inherit;
 }
 
 .background-short .input { /*ОТЛИЧНО*/
 	border: none;
 	background-color: var(--light-gray-very-light);
 	box-sizing: border-box;
-  width: 150px;
+  width: 116px;
   padding: 7px 11px 7px 11px;
   color: var(--black);
   border: 0;
   height: 38px;
+  text-align: center;
+  font-weight: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  text-transform: inherit;
+}
+
+input[type='number'] {
+    -moz-appearance:textfield;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
 }
 
 .search-parameter-text { /*ОТЛИЧНО*/
@@ -819,9 +843,10 @@ padding: 30px 140px 30px 140px;
 	height: 38px;
 	position: relative;
 	text-align: left;
+	width: 100%;
 }
 
-.search-parameter-group .search-parameter-text:last-of-type {
+.background-short:nth-child(2) .search-parameter-item {
 	padding-left: 53px;
 }
 
@@ -842,23 +867,29 @@ padding: 30px 140px 30px 140px;
 	background-repeat: no-repeat;
 	background-position: 50% 50%;
 	position: absolute;
-	transform: translateX(410px);
+	transform: translateX(430px);
 }
 
 .button-minus {
-	width: 12px;
-	height: 12px;
+	width: 30px;
+	height: 30px;
 	background-image: url(../img/icon-minus.svg);
 	background-repeat: no-repeat;
 	background-position: 50% 50%;
+	position: absolute;
+	transform: translateX(120px);
+	background-color: inherit;
 }
 
 .button-plus {
-	width: 11px;
-	height: 11px;
+	width: 30px;
+	height: 30px;
 	background-image: url(../img/icon-plus.svg);
 	background-repeat: no-repeat;
 	background-position: 50% 50%;
+	position: absolute;
+	transform: translateX(195px);
+	background-color: inherit;
 }
 
 .button-info {
@@ -877,7 +908,7 @@ padding: 30px 140px 30px 140px;
 }
 
 .button-find {
-padding: 22px 192px 22px 192px;
+padding: 17px 195px 17px 195px;
 margin: 0;
 }
 
@@ -940,7 +971,7 @@ margin: 0;
 .footer-contact {
 	font-size: 21px;
 	font-weight: bold;
-	line-height: 26px;
+	line-height: 22px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -949,7 +980,7 @@ margin: 0;
 
 .footer-contact-item {
 	padding: 0;
-	margin: 0 0 12px 0;
+	margin: 0 0 16px 0;
 }
 
 .footer-social {
