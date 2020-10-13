@@ -477,9 +477,7 @@ padding: 30px 140px 30px 140px;
 
 
 
-.button-find {
-padding: 20px auto 20px auto;
-}
+
 /*
 .search-map {
 	grid-row: 3;
@@ -749,109 +747,92 @@ padding: 20px auto 20px auto;
 
 /*форма поиска*/
 
-.search-popup {
-/*	grid-row: 3;*/
+.search-popup {  /*ОТЛИЧНО*/
 	width: 570px;
 	height: 397px;
 	background-color: var(--white);
 	position: absolute;
 	z-index: 1;
 	transform: translateY(234px);
+	padding: 55px;
+	box-sizing:border-box;
 }
 
-.search-form {
+.search-form { /*ОТЛИЧНО*/
 
 }
 
-.search-form-wrapper {
+.search-form-wrapper { /*ОТЛИЧНО*/
 	display: flex;
 	flex-direction: column;
-	padding: 55px;
 	justify-content: space-between;
-}
-
-.search-form-parameter {
-/*	display: flex;
-	flex-direction: column;*/
-}
-
-.search-parameter-group {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-}
-
-.search-parameter-item {
-	display: flex;
 	align-items: center;
+	min-height: 100%;
+}
+
+.search-parameter-group { /*ОТЛИЧНО*/
+	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	/*min-height: 38px;*/
-	padding-bottom: 30px;
+	min-width: 100%;
+}
+
+.search-parameter-item { /*ОТЛИЧНО*/
+
 }
 /*
-.search-parameter-item:first-child {
-	width: 400px;
-}
-
-.search-parameter-item:nth-child(2) {
-	width: 400px;
-}
-
-.search-parameter-item:nth-child(3) {
-	width: 200px;
-}
-
-.search-parameter-item:nth-child(4) {
-	width: 200px;
-}
-
-.search-parameter-background {
-/*	
-}*/
-	
-/*	padding-bottom: 30px;
+.search-parameter-group .search-parameter-text { /*ОТЛИЧНО*/
+/*	width: 50%;
 }*/
 
-.background-long input {
-	width: 50px;
-	border: none;
+.background-long .input { /*ОТЛИЧНО*/
+	box-sizing: border-box;
+  width: 300px;
+  padding: 7px 50px 7px 13px;
+  color: var(--black);
+  border: 0;
+  height: 38px;
+  background-color: var(--light-gray-very-light);
 }
 
-.background-short input {
-	width: 20px;
+.background-short .input { /*ОТЛИЧНО*/
 	border: none;
-}
-
-.search-parameter-background {
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	justify-content: space-between;
 	background-color: var(--light-gray-very-light);
-	height: 38px;
+	box-sizing: border-box;
+  width: 150px;
+  padding: 7px 11px 7px 11px;
+  color: var(--black);
+  border: 0;
+  height: 38px;
 }
 
-.search-parameter-text {
+.search-parameter-text { /*ОТЛИЧНО*/
 	font-size: 14px;
 	line-height: 26px;
 	font-weight: bold;
 	padding: 0;
-	margin: 0;
+	margin: 0 0 30px 0;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+  justify-content: space-between;
+	height: 38px;
+	position: relative;
+	text-align: left;
 }
 
+.search-parameter-group .search-parameter-text:last-of-type {
+	padding-left: 53px;
+}
+
+
 .background-long {
-	width: 75%;
-	padding-left: 13px;
-	padding-right: 9px;
+
 }
 
 .background-short {
-	width: 75%;
-/*	padding-left: 14px;
-	padding-right: 14px;*/
-}
 
+}
 
 
 .button-calendar {
@@ -859,6 +840,9 @@ padding: 20px auto 20px auto;
 	height: 23px;
 	background-image: url(../img/icon-calendar.svg);
 	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	position: absolute;
+	transform: translateX(410px);
 }
 
 .button-minus {
@@ -867,7 +851,6 @@ padding: 20px auto 20px auto;
 	background-image: url(../img/icon-minus.svg);
 	background-repeat: no-repeat;
 	background-position: 50% 50%;
-	margin: 13px;
 }
 
 .button-plus {
@@ -875,9 +858,8 @@ padding: 20px auto 20px auto;
 	height: 11px;
 	background-image: url(../img/icon-plus.svg);
 	background-repeat: no-repeat;
-	margin: 13px;
+	background-position: 50% 50%;
 }
-
 
 .button-info {
 	background-color: var(--light-gray-blue);
@@ -893,6 +875,17 @@ padding: 20px auto 20px auto;
 	color: var(--white-advant-3);
 	outline: none;
 }
+
+.button-find {
+padding: 22px 192px 22px 192px;
+margin: 0;
+}
+
+
+
+
+
+
 
 .search-description {
 	font-size: 14px;

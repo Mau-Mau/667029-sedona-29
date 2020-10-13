@@ -122,52 +122,44 @@
 	  		</div>
 	  		<a href="#" class="link button button-action button-search">Поиск гостиницы в Седоне</a>
   			<img src="img/map.png" class="search-map" alt="Карта с указанием местоположения Седоны" width="1200" height="594">
+
   			<div class="search-popup">
-	   			<form action="https://echo.htmlacademy.ru" class="search-form" method="get">
-	       		<div class="search-form-wrapper">
+          <form action="https://echo.htmlacademy.ru" class="search-form search-form-wrapper" method="get">
 
-		       		<div class="search-form-parameter">
-		  					<label class="search-parameter-item">
-		  						<p class="search-parameter-text">Дата заезда:</p>
-		  						<div class="search-parameter-background background-long">
-		  							<input type="text" name="arrival-date" class="input">
-		  							<div class="button button-calendar"></div>
-		  						</div>
-								</label>
+						<p class="search-parameter-text background-long">
+              <label for="arrive" class="search-parameter-item">Дата заезда:</label>
+							<input id="arrive" type="text" name="arrival-date" class="input">
+              <button type="button" class="button button-calendar"></button>
+            </p>
 
-								<label class="search-parameter-item">
-		  						<p class="search-parameter-text">Дата выезда:</p>
-		  						<div class="search-parameter-background background-long">
-		  							<input type="text" name="departure-date">
-		  							<div class="button button-calendar"></div>
-		  						</div>
-								</label>
+            <!--        </label>-->
+          	<p class="search-parameter-text background-long">
+              <label for="departure" class="search-parameter-item">Дата выезда:</label>
+							<input id="departure" type="text" name="arrival-date" class="input">
+              <button type="button" class="button button-calendar"></button>
+            </p>
+                    <!--   </label>-->
 
-								<div class="search-parameter-group">
-									<label class="search-parameter-item">
-			  						<p class="search-parameter-text">Взрослые:</p>
-			  						<div class="search-parameter-background background-short">
-			  							<div class="button button-minus"></div>
-			  							<input type="number" name="adult-number">
-			  							<div class="button button-plus"></div>
-			  						</div>
-									</label>
+            <div class="search-parameter-group">
+              <p class="search-parameter-text">
+                <label for="adult-number" class="search-parameter-item">Взрослые:</label>
+                <button class="button button-minus"></button>
+                <input id="adult-number" type="number" name="adult-number">
+                <button class="button button-plus"></button>
+              </p>
+                  
+              <p class="search-parameter-text">
+                <label for="child-number" class="search-parameter-item">Дети:</label>
+                <button class="button button-minus"></button>
+                <input id="child-number" type="number" name="adult-number">
+                <button class="button button-plus"></button>
+              </p>
+            </div>
 
-									<label class="search-parameter-item">
-			  						<p class="search-parameter-text">Дети:</p>
-			  						<div class="search-parameter-background background-short">
-			  							<div class="button button-minus"></div>
-			  							<input type="number" name="child-nubmer">
-			  							<div class="button button-plus"></div>
-			  						</div>
-									</label>
-								</div>
-							</div>
+						<button class="button button-info button-find" type="submit">Найти</button>
 
-							<div class="button button-info button-find" type="submit">Найти</div>
-						</div>
-	    		</form>
-	    	</div>
+          </form>
+        </div>
   		</section>
   	</main>
 
