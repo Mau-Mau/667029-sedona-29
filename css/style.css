@@ -479,11 +479,6 @@ padding: 30px 140px 30px 140px;
 	background-color: var(--gray-darker);
 }
 
-.hotel-search-filter {
-	height: 217px;
-	background-color: var(--gray-blue);
-}
-
 .search-found-parameter {
 	display: grid;
 	grid-template-rows: 86px;
@@ -982,10 +977,6 @@ margin: 0;
 .star-group-item:not(:last-child) {
 	margin-right: 5px;
 }
-/*
-.star-group-item:nth-last-child(3) {
-	margin-right: 5px;
-}*/
 
 .rating {
 	background-color: var(--light-gray-very-light);
@@ -997,6 +988,109 @@ margin: 0;
 	margin: 0;
 	width: 110px;
 	height: 31px;
+}
+/* фильтр поиска гостиниц*/
+
+.hotel-search-filter {
+	height: 217px;
+	background-color: var(--gray-blue);
+	background-image: url(../img/mountain-view-blur.jpg);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	box-sizing: border-box;
+}
+
+.filter-form {
+	margin: 0 72px 0 72px;
+	min-height: 100%;
+}
+
+.filter-list {
+	display: grid;
+	grid-template-columns: 248px 250px 1fr 320px;
+	grid-template-rows: 1fr;
+	grid-gap: 5px;
+	height: 217px;
+}
+
+.filter-list-item {
+	color: var(--white);
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: space-between;
+	padding: 30px 0 30px 0;
+}
+
+.button-show {
+	align-self: center;
+}
+
+.filter-service-list {
+	grid-row-start: 1;
+	grid-row-end: 1;
+	grid-column-start: 1;
+	grid-column-end: 2;
+}
+
+.filter-type-list {
+	grid-row-start: 1;
+	grid-row-end: 1;
+	grid-column-start: 2;
+	grid-column-end: 3;
+}
+
+.filter-price {
+	grid-row-start: 1;
+	grid-row-end: 1;
+	grid-column-start: 4;
+	grid-column-end: 5;
+}
+
+.filter-list-header {
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 21px;
+	margin: 0;
+	padding: 0;
+}
+
+.filter-list-text {
+	font-size: 14px;
+	line-height: 21px;
+	margin: 0;
+	padding: 0 0 20px 40px;
+
+}
+
+.filter-list-text:last-child {
+	padding-bottom: 0;
+}
+
+.сheckbox-checked {
+  width: 25px;
+	height: 25px;
+/*	position: absolute;
+	transform: translateX(430px);*/
+}
+
+.сheckbox-unchecked {
+  width: 25px;
+	height: 25px;
+/*	position: absolute;
+	transform: translateX(430px);*/
+}
+
+
+
+
+
+
+
+
+
+.button-show {
+
 }
 
 /*подвал*/
