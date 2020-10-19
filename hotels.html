@@ -36,14 +36,22 @@
 	  			
 	  			<form action="https://echo.htmlacademy.ru" class="filter-form" method="get">
 	  				<div class="filter-list">
-	  					<div class="filter-list-item filter-service-list">
-	  						<p class="filter-list-header">Инфраструктура:</p>
-	  						<ul class="list">
-	  							<li class="filter-list-text">Бассейн</li>
-	  							<li class="filter-list-text">Парковка</li>
-	  							<li class="filter-list-text">Wi-Fi</li>
-	  						</ul>
-	  					</div>
+	  					
+	  					<fieldset class="filter-list-item filter-service-list">
+    						<legend class="filter-list-header">Инфраструктура:</legend>
+    						<p class="filter-list-text">
+    							<input type="checkbox" id="service-waterpool" class="checkbox" checked>
+    							<label for="list-item service-waterpool">Бассейн</label>
+    						</p>
+    						<p class="filter-list-text">
+    							<input type="checkbox" id="service-parking" class="checkbox">
+    							<label for="list-item service-parking">Парковка</label>
+    						</p>
+    						<p class="filter-list-text">
+    							<input type="checkbox" id="service-wi-fi" class="checkbox">
+    							<label for="list-item service-wi-fi">Wi-Fi</label>
+    						</p>
+  						</fieldset>
 
 	  					<div class="filter-list-item filter-type-list">
 	  						<p class="filter-list-header">Тип жилья:</p>
@@ -61,7 +69,7 @@
 	  							<!-- ручки -->
 	  						</div>
 
-	  						<button class="button button-show filter-list-text" type="button">Показать</button>
+	  						<button class="button button-show filter-list-text" type="submit">Показать</button>
 	  					</div>
 	  				</div>
 					</form>
