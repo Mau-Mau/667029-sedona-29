@@ -69,14 +69,36 @@
     						</p>
   						</fieldset>
 
-	  					<fieldset class="filter-list-item filter-price">
-    						<legend class="filter-list-header">Стоимость в сутки (р):</legend>
-    						<div>
-	  							<!-- ручки -->
-	  						</div>
+  						<div class="filter-wrapper">
+		  					<fieldset class="filter-list-item filter-price">
+	    						<legend class="filter-list-header">Стоимость в сутки (р):</legend>
+	    						<div class="price-range">
+		  							<div class="price-controls">
+		  								<div class="price-digit">
+	            					<label class="price-min">
+	              					от <input type="number" name="price-min" value="0" class="price-input">
+	            					</label>
+	            				</div>
+	            				<div class="price-digit">
+	            					<label class="price-max">
+	              					до <input type="number" name="price-max" value="3000" class="price-input">
+	            					</label>
+	            				</div>
+          					</div>
 
-	  						<button class="button button-show filter-list-text" type="submit">Показать</button>
-    					</fieldset>
+          					<div class="range-controls">
+            					<div class="scale">
+              					<div class="bar"></div>
+            					</div>
+            					<div class="toggle toggle-min"></div>
+            					<div class="toggle toggle-max"></div>
+          					</div>
+
+		  						</div>
+	    					</fieldset>
+
+	    					<button class="button button-show filter-list-text" type="submit">Показать</button>
+	    				</div>
 	  				</div>
 					</form>
 

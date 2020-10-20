@@ -1019,7 +1019,7 @@ margin: 0;
 	flex-direction: column;
 	align-items: flex-start;
 	justify-content: space-between;
-	margin: 30px 0 30px 0;
+	margin: 30px 0 10px 0;
 	padding: 0;
 	border: none;
 	vertical-align: middle;
@@ -1044,17 +1044,14 @@ margin: 0;
 }
 
 .filter-price {
-	grid-row-start: 1;
-	grid-row-end: 1;
-	grid-column-start: 4;
-	grid-column-end: 5;
+	
 }
 
 .filter-list-header {
 	font-weight: bold;
 	font-size: 16px;
 	line-height: 21px;
-	padding: 0 0 30px 0;
+	padding: 0 0 15px 0;
 }
 
 .filter-list-text {
@@ -1088,16 +1085,114 @@ margin: 0;
 	transform: translateX(430px);*/
 }
 
+.filter-wrapper {
+	grid-row-start: 1;
+	grid-row-end: 1;
+	grid-column-start: 4;
+	grid-column-end: 5;
+}
 
+.price-range {
+	width: 315px;
+	height: 36px;
+	border: 2px solid var(--white);
+	border-radius: 2px;
+}
 
+.price-controls {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: row;
+  margin-bottom: 39px;
+}
 
+.price-digit {
+		min-width: 50%;
+		height: 22px;
 
+}
 
+.price-digit:first-child {
+	border-right: 2px solid var(--white);
+
+}
+
+.price-min {
+
+	
+
+}
+
+.price-max {
+
+	text-align: center;
+}
+
+.price-input {
+	background: transparent;
+	width: 50px;
+	color: inherit;
+	border: none;
+}
+
+.range-controls {
+	position: relative;
+  height: 35px;
+  background-color: transparent;
+}
+
+.scale {
+	height: 2px;
+  background: var(--white-advant-3);
+}
+
+.bar {
+	width: 250px;
+  height: 2px;
+  background: var(--white);
+  margin-left: 8px;
+}
+
+.toggle {
+	position: absolute;
+  top: 31px;
+  left: 0;
+  width: 4px;
+  height: 4px;
+  padding: 0;
+  border: 8px solid #ffffff;
+  background-color: #ababab;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 #cfcfcf;
+  cursor: pointer;
+}
+
+.toggle-min {
+/*  transform: translateY(-19px);*/
+}
+
+.toggle-max {
+/*	transform: translateX(250px) translateY(-19px);*/
+
+}
 
 
 
 .button-show {
-
+	background: transparent;
+	font-size: inherit;
+	font-style: inherit;
+	text-transform: inherit;
+	font-weight: inherit;
+	line-height: inherit;
+	border: 2px solid var(--white);
+	border-radius: 2px;
+	margin: 0 auto 0 auto;
+	width: 137px;
+	height: 36px;
+	text-align: center;
+	padding: 0;
 }
 
 /*подвал*/
