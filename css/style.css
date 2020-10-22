@@ -983,11 +983,9 @@ margin: 0;
 	border: none;
 	color: var(--dark-gray);
 	text-align: center;
-	vertical-align: middle;
-	padding: 0;
+	padding: 3px 0 3px 0;
 	margin: 0;
 	width: 110px;
-	height: 31px;
 }
 /* фильтр поиска гостиниц*/
 
@@ -1032,21 +1030,48 @@ margin: 0;
   user-select: none;
 }
 
-.list-item::before {
+.checkbox + .list-item::before {
   content: "";
   position: absolute;
-  left: -42px;
+  left: -40px;
   top: 0;
   width: 27px;
   height: 23px;
   background-image: url(../img/icon-checkbox-off.svg);
   background-repeat: no-repeat;
-  background-position: 50% 50%;
-  border: 2px solid #000000;
+  background-position: 0% 50%;
 }
 
-.button-show {
-	align-self: center;
+.checkbox:checked + .list-item::after {
+	content: "";
+  position: absolute;
+  left: -40px;
+  top: 0;
+  width: 27px;
+  height: 23px;
+  background-image: url(../img/icon-checkbox-on.svg);
+  background-repeat: no-repeat;
+  background-position: 0% 50%;
+}
+
+.checkbox:checked + .list-item::before {
+	background-image: none;
+}
+
+.checkbox:checked:disabled + .list-item::after {
+	background-image: url(../img/icon-checkbox-on-disabled.svg);
+}
+
+.checkbox:checked:disabled + .list-item::before {
+	background-image: none;
+}
+
+.checkbox:disabled + .list-item::after {
+	background-image: url(../img/icon-checkbox-off-disabled.svg);
+}
+
+.checkbox:disabled + .list-item::before {
+	background-image: none;
 }
 
 .filter-service-list {
@@ -1095,20 +1120,6 @@ margin: 0;
 	transform: translateX(-20px);
 }
 
-.сheckbox-checked {
-  width: 25px;
-	height: 25px;
-/*	position: absolute;
-	transform: translateX(430px);*/
-}
-
-.сheckbox-unchecked {
-  width: 25px;
-	height: 25px;
-/*	position: absolute;
-	transform: translateX(430px);*/
-}
-
 .filter-wrapper {
 	grid-row-start: 1;
 	grid-row-end: 1;
@@ -1144,7 +1155,7 @@ margin: 0;
 }
 
 .price-min {
-
+	text-align: center;
 }
 
 .price-max {
@@ -1190,16 +1201,25 @@ margin: 0;
   cursor: pointer;
 }
 
+.toggle:hover {
+	border: 10px solid var(--white);
+}
+
 .toggle-min {
   transform: translateY(-40px);
 }
 
-.toggle-max {
-	transform: translateX(255px) translateY(-40px);
-
+.toggle-min:hover {
+	transform: translateY(-42px) translateX(-2px);
 }
 
+.toggle-max {
+	transform: translateX(255px) translateY(-40px);
+}
 
+.toggle-max:hover {
+	transform: translateX(253px) translateY(-42px);
+}
 
 .button-show {
 	background: transparent;
@@ -1215,6 +1235,13 @@ margin: 0;
 	height: 36px;
 	text-align: center;
 	padding: 0;
+	align-self: center;
+	cursor: pointer;
+}
+
+.button-show:hover {
+	background-color: var(--white);
+	color: var(--black);
 }
 
 /*подвал*/
