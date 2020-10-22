@@ -1007,7 +1007,7 @@ margin: 0;
 
 .filter-list {
 	display: grid;
-	grid-template-columns: 248px 250px 1fr 320px;
+	grid-template-columns: 250px 250px 1fr 319px;
 	grid-template-rows: 1fr;
 	grid-gap: 5px;
 	height: 217px;
@@ -1019,7 +1019,7 @@ margin: 0;
 	flex-direction: column;
 	align-items: flex-start;
 	justify-content: space-between;
-	margin: 30px 0 0 0;
+	margin: 25px 0 0 0;
 	padding: 0;
 	border: none;
 	vertical-align: middle;
@@ -1041,7 +1041,7 @@ margin: 0;
   height: 23px;
   background-image: url(../img/icon-checkbox-off.svg);
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: 50% 50%;
   border: 2px solid #000000;
 }
 
@@ -1071,14 +1071,18 @@ margin: 0;
 	font-weight: bold;
 	font-size: 16px;
 	line-height: 21px;
-	padding: 0 0 15px 0;
+	padding: 0 0 25px 0;
+}
+
+.filter-price .filter-list-header {
+	padding-bottom: 12px;
 }
 
 .filter-list-text {
 	font-size: 14px;
 	line-height: 21px;
 	margin: 0;
-	padding: 0 0 20px 40px;
+	padding: 0 0 25px 40px;
 	position: relative;
 }
 
@@ -1113,7 +1117,7 @@ margin: 0;
 }
 
 .price-range {
-	width: 315px;
+	width: 319px;
 
 }
 
@@ -1122,7 +1126,7 @@ margin: 0;
   align-items: center;
   justify-content: space-between;
   flex-direction: row;
-  height: 36px;
+  height: 32px;
   border: 2px solid var(--white);
 	border-radius: 2px;
 	margin-bottom: 20px;
@@ -1191,7 +1195,7 @@ margin: 0;
 }
 
 .toggle-max {
-	transform: translateX(250px) translateY(-40px);
+	transform: translateX(255px) translateY(-40px);
 
 }
 
@@ -1199,14 +1203,14 @@ margin: 0;
 
 .button-show {
 	background: transparent;
-	font-size: inherit;
+	font-size: 14px;
 	font-style: inherit;
 	text-transform: inherit;
 	font-weight: inherit;
-	line-height: inherit;
+	line-height: 21px;
 	border: 2px solid var(--white);
 	border-radius: 2px;
-	margin: 0 auto 0 auto;
+	margin: 0 auto 0 86px;
 	width: 137px;
 	height: 36px;
 	text-align: center;
@@ -1298,7 +1302,7 @@ margin: 0;
 
 .footer-developed-by {
 	font-size: 14px;
-	line-height: 26px;
+	line-height: 15px;
 	display: flex;
 	flex-direction: row;
 	align-items: center;
