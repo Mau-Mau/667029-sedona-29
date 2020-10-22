@@ -1135,7 +1135,7 @@ margin: 0;
 .price-controls {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   flex-direction: row;
   height: 32px;
   border: 2px solid var(--white);
@@ -1144,29 +1144,46 @@ margin: 0;
 }
 
 .price-digit {
-	min-width: 50%;
+  min-width: 50%;
 	height: 22px;
-	text-align: center;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	align-items: center;
 }
 
 .price-digit:first-child {
 	border-right: 2px solid var(--white);
-
 }
 
 .price-min {
-	text-align: center;
+	display: block;
+	align-self: center;
+	line-height: 21px;
+	font-size: 14px;
 }
 
 .price-max {
+	line-height: 21px;
+	font-size: 14px;
 
 }
 
 .price-input {
 	background: transparent;
-	width: 50px;
+
 	color: inherit;
 	border: none;
+	line-height: 21px;
+	font-size: 14px;
+}
+
+.price-min + .price-input {
+	width: 70px;
+}
+
+.price-max + .price-input {
+	width: 80px;
 }
 
 .range-controls {
