@@ -715,7 +715,7 @@ padding: 30px 140px 30px 140px;
 	line-height: 26px;
 	text-transform: uppercase;
 	vertical-align: middle;
-	outline: none;
+
 	display: block;
 }
 
@@ -726,13 +726,13 @@ padding: 30px 140px 30px 140px;
 
 .button-action:hover {
 	background-color: var(--brown-darker);
-	outline: none;
+
 }
 
 .button-action:active {
 	background-color: var(--dark-brown);
 	color: var(--white-advant-3);
-	outline: none;
+	outline: 2px solid var(--light-black);
 }
 
 /*форма поиска*/
@@ -871,6 +871,7 @@ input::-webkit-inner-spin-button {
 
 .button-calendar:active path {
 	fill: var(--light-gray-blue);
+
 }
 
 .button-minus {
@@ -886,6 +887,7 @@ input::-webkit-inner-spin-button {
 
 .button-minus:active rect {
 	fill: var(--light-gray-blue);
+
 }
 
 .button-plus {
@@ -901,6 +903,7 @@ input::-webkit-inner-spin-button {
 
 .button-plus:active path {
 	fill: var(--light-gray-blue);
+
 }
 
 .button-info {
@@ -909,13 +912,13 @@ input::-webkit-inner-spin-button {
 
 .button-info:hover {
 	background-color: var(--gray-blue-lighter);
-	outline: none;
+
 }
 
 .button-info:active {
 	background-color: var(--gray-blue);
 	color: var(--white-advant-3);
-	outline: none;
+	outline: 2px solid var(--light-black);
 }
 
 .button-find {
@@ -936,6 +939,7 @@ margin: 0;
 
 .button-sort-up:active path {
 	fill: var(--light-gray-blue);
+		
 }
 
 .button-sort-down {
@@ -1335,6 +1339,7 @@ margin: 0;
 .social-button:active {
 	background-color: var(--gray-blue);
 	color: var(--white-advant-3);
+		outline: 2px solid var(--light-black);
 }
 
 .social-button:active path {
