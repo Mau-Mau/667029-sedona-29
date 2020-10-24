@@ -40,15 +40,15 @@
 	  					<fieldset class="filter-list-item filter-service-list">
     						<legend class="filter-list-header">Инфраструктура:</legend>
     						<p class="filter-list-text">
-    							<input type="checkbox" id="service-waterpool" class="checkbox hidden" checked>
+    							<input type="checkbox" name="service-waterpool" class="checkbox hidden" checked>
     							<label for="service-waterpool" class="list-item">Бассейн</label>
     						</p>
     						<p class="filter-list-text">
-    							<input type="checkbox" id="service-parking" class="checkbox hidden">
+    							<input type="checkbox" name="service-parking" class="checkbox hidden">
     							<label for="service-parking" class="list-item">Парковка</label>
     						</p>
     						<p class="filter-list-text">
-    							<input type="checkbox" id="service-wi-fi" class="checkbox hidden">
+    							<input type="checkbox" name="service-wi-fi" class="checkbox hidden">
     							<label for="service-wi-fi" class="list-item">Wi-Fi</label>
     						</p>
   						</fieldset>
@@ -56,47 +56,45 @@
   						<fieldset class="filter-list-item filter-type-list">
     						<legend class="filter-list-header">Тип жилья:</legend>
     						<p class="filter-list-text">
-    							<input type="checkbox" id="type-hotel" class="checkbox hidden" checked>
+    							<input type="checkbox" name="type-hotel" class="checkbox hidden" checked>
     							<label for="type-hotel" class="list-item">Гостиница</label>
     						</p>
     						<p class="filter-list-text">
-    							<input type="checkbox" id="type-motel" class="checkbox hidden" checked>
+    							<input type="checkbox" name="type-motel" class="checkbox hidden" checked>
     							<label for="type-motel" class="list-item">Мотель</label>
     						</p>
     						<p class="filter-list-text">
-    							<input type="checkbox" id="type-apartaments" class="checkbox hidden" checked>
+    							<input type="checkbox" name="type-apartaments" class="checkbox hidden" checked>
     							<label for="type-apartaments" class="list-item">Апартаменты</label>
     						</p>
   						</fieldset>
 
-  						<div class="filter-wrapper">
-		  					<fieldset class="filter-list-item filter-price">
-	    						<legend class="filter-list-header">Стоимость в сутки (р):</legend>
-	    						<div class="price-range">
-		  							<div class="price-controls">
-		  								<div class="price-digit">
-	            					<label for="price-min" class="price-min">от</label>
-	            					<input type="number" name="price-min" value="0" class="price-input">
-	            				</div>
-	            				<div class="price-digit">
-	            					<label for="price-max" class="price-max">до</label>
-	            					<input type="number" name="price-max" value="3000" class="price-input">
-	            				</div>
-          					</div>
+		  				<fieldset class="filter-list-item filter-price">
+	    					<legend class="filter-list-header">Стоимость в сутки (р):</legend>
+	    					<div class="price-range">
+		  						<div class="price-controls">
+		  							<div class="price-digit">
+	            				<label for="price-min" class="price-min">от</label>
+	            				<input type="number" name="price-min" value="0" class="price-input">
+	            			</div>
+	            			<div class="price-digit">
+	            				<label for="price-max" class="price-max">до</label>
+	            				<input type="number" name="price-max" value="3000" class="price-input">
+	            			</div>
+          				</div>
 
-          					<div class="range-controls">
-            					<div class="scale">
-              					<div class="bar"></div>
-            					</div>
-            					<div class="toggle toggle-min"></div>
-            					<div class="toggle toggle-max"></div>
-          					</div>
+          				<div class="range-controls">
+            				<div class="scale">
+              				<div class="bar"></div>
+            				</div>
+            				<div class="toggle toggle-min"></div>
+            				<div class="toggle toggle-max"></div>
+          				</div>
 
-		  						</div>
-	    					</fieldset>
+		  					</div>
+	    				</fieldset>
 
-	    					<button class="button button-show filter-list-text" type="submit">Показать</button>
-	    				</div>
+	    				<button class="button button-show filter-list-text" type="submit">Показать</button>
 	  				</div>
 					</form>
 

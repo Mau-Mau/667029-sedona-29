@@ -1006,7 +1006,7 @@ margin: 0;
 .filter-list {
 	display: grid;
 	grid-template-columns: 250px 250px 1fr 319px;
-	grid-template-rows: 1fr;
+	grid-template-rows: 144px 1fr;
 	grid-gap: 5px;
 	height: 217px;
 }
@@ -1017,7 +1017,7 @@ margin: 0;
 	flex-direction: column;
 	align-items: flex-start;
 	justify-content: space-between;
-	margin: 25px 0 0 0;
+	margin: 25px 0 auto 0;
 	padding: 0;
 	border: none;
 	vertical-align: middle;
@@ -1042,6 +1042,10 @@ margin: 0;
   background-position: 0% 50%;
 }
 
+.checkbox:checked + .list-item::before {
+	background-image: none;
+}
+
 .checkbox:checked + .list-item::after {
 	content: "";
   position: absolute;
@@ -1054,7 +1058,7 @@ margin: 0;
   background-position: 0% 50%;
 }
 
-.checkbox:checked + .list-item::before {
+.checkbox:checked:disabled + .list-item::before {
 	background-image: none;
 }
 
@@ -1062,34 +1066,34 @@ margin: 0;
 	background-image: url(../img/icon-checkbox-on-disabled.svg);
 }
 
-.checkbox:checked:disabled + .list-item::before {
-	background-image: none;
-}
-
-.checkbox:disabled + .list-item::after {
+.checkbox:disabled + .list-item::before {
 	background-image: url(../img/icon-checkbox-off-disabled.svg);
 }
 
-.checkbox:disabled + .list-item::before {
+.checkbox:disabled + .list-item::after {
 	background-image: none;
 }
 
+
 .filter-service-list {
 	grid-row-start: 1;
-	grid-row-end: 1;
+	grid-row-end: 3;
 	grid-column-start: 1;
 	grid-column-end: 2;
 }
 
 .filter-type-list {
 	grid-row-start: 1;
-	grid-row-end: 1;
+	grid-row-end: 3;
 	grid-column-start: 2;
 	grid-column-end: 3;
 }
 
 .filter-price {
-	
+	grid-row-start: 1;
+	grid-row-end: 2;
+	grid-column-start: 4;
+	grid-column-end: 5;
 }
 
 .filter-list-header {
@@ -1121,10 +1125,7 @@ margin: 0;
 }
 
 .filter-wrapper {
-	grid-row-start: 1;
-	grid-row-end: 1;
-	grid-column-start: 4;
-	grid-column-end: 5;
+	
 }
 
 .price-range {
@@ -1247,13 +1248,17 @@ margin: 0;
 	line-height: 21px;
 	border: 2px solid var(--white);
 	border-radius: 2px;
-	margin: 0 auto 0 86px;
+	margin: 0 auto auto 86px;
 	width: 137px;
 	height: 36px;
 	text-align: center;
 	padding: 0;
 	align-self: center;
 	cursor: pointer;
+	grid-row-start: 2;
+	grid-row-end: 3;
+	grid-column-start: 4;
+	grid-column-end: 5;
 }
 
 .button-show:hover {
