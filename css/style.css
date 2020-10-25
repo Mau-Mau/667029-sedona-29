@@ -732,7 +732,7 @@ padding: 30px 140px 30px 140px;
 .button-action:active {
 	background-color: var(--dark-brown);
 	color: var(--white-advant-3);
-	outline: 2px solid var(--light-black);
+/*	outline: 2px solid var(--light-black);*/
 }
 
 /*форма поиска*/
@@ -918,7 +918,7 @@ input::-webkit-inner-spin-button {
 .button-info:active {
 	background-color: var(--gray-blue);
 	color: var(--white-advant-3);
-	outline: 2px solid var(--light-black);
+/*	outline: 2px solid var(--light-black);*/
 }
 
 .button-find {
@@ -1339,7 +1339,7 @@ margin: 0;
 .social-button:active {
 	background-color: var(--gray-blue);
 	color: var(--white-advant-3);
-		outline: 2px solid var(--light-black);
+/*		outline: 2px solid var(--light-black);*/
 }
 
 .social-button:active path {
