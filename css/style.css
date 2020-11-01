@@ -170,10 +170,6 @@
 	grid-template-columns: 1fr;
 }
 
-.wrapper-body {
-	padding: 0 72px 0 72px;
-}
-
 .header-title {
 	background-color: var(--gray-blue);
 	min-height: 509px;
@@ -436,6 +432,7 @@
 	grid-template-rows: 86px;
 	grid-template-columns: 135px 1fr 110px;
 	column-gap: 29px;
+	padding: 0 72px 0 72px;
 }
 
 .search-header {
@@ -540,14 +537,20 @@
 .hotel-list-item {
 	display: grid;
 	grid-template-rows: 1fr;
-	grid-template-columns: 135px 1fr 110px;
+	grid-template-columns: 207px 1fr 110px;
 	column-gap: 29px;
+	border-bottom: 1px solid var(--light-gray-darker);
+}
+
+.hotel-list-item:first-child {
+	border-top: 1px solid var(--light-gray-darker);
 }
 
 .hotel-preview {
 	max-width: 135px;
 	margin-top: auto;
 	margin-bottom: 30px;
+	margin-left: 72px;
 	grid-row-start: 1;
 	grid-row-end: 2;
 	grid-column-start: 1;
@@ -574,6 +577,7 @@
 	align-items: flex-end;
 	margin-top: 29px;
 	margin-bottom: 30px;
+	margin-right: 72px;
 	grid-row-start: 1;
 	grid-row-end: 2;
 	grid-column-start: 3;
@@ -683,7 +687,7 @@
 	color: var(--white-advant-3);
 }
 
-/*форма поиска*/
+/*search form*/
 
 .search-popup { 
 	width: 570px;
@@ -716,7 +720,7 @@
 	min-width: 100%;
 }
 
-.search-parameter-group .search-parameter-text { /*ОТЛИЧНО*/
+.search-parameter-group .search-parameter-text {
 	min-width: 50%;
 }
 
@@ -1190,7 +1194,7 @@ input::-webkit-inner-spin-button {
 	color: var(--black);
 }
 
-/*подвал*/
+/*footer*/
 
 .footer {
 	background-color: var(--white-advant-3);
