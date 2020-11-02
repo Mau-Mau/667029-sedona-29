@@ -406,7 +406,7 @@
 
 .search-hotel-description {
 	font-size: 14px;
-	line-height: 21px;
+	line-height: 24px;
 	padding: 0;
 	max-width: 435px;
 }
@@ -1237,6 +1237,7 @@ input::-webkit-inner-spin-button {
 	flex-direction: row;
 	align-items: center;
 	justify-content: center;
+	flex-wrap: wrap;
 }
 
 .social-button {
