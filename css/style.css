@@ -978,6 +978,16 @@ input::-webkit-inner-spin-button {
 	background-position: 0% 50%;
 }
 
+.checkbox:focus + .list-item::before {
+	outline: 2px solid var(--white);
+	outline-offset: 2px;
+}
+
+.checkbox:focus + .list-item::after {
+	outline: 2px solid var(--white);
+	outline-offset: 2px;
+}
+
 .checkbox:checked + .list-item::before {
 	background-image: none;
 }
