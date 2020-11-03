@@ -272,6 +272,7 @@
 .item-city-house {
 	height: 132px;
 	width: 400px;
+	background-color: var(--white);
 	background-image: url(../img/icon-home.svg);
 	background-repeat: no-repeat;
 	background-position-x: center;
@@ -281,6 +282,7 @@
 .item-city-food {
 	height: 132px;
 	width: 400px;
+	background-color: var(--white);
 	background-image: url(../img/icon-food.svg);
 	background-repeat: no-repeat;
 	background-position-x: center;
@@ -290,6 +292,7 @@
 .item-city-souvenir {
 	height: 132px;
 	width: 400px;
+	background-color: var(--white);
 	background-image: url(../img/icon-gift.svg);
 	background-repeat: no-repeat;
 	background-position-x: center;
@@ -527,15 +530,9 @@
 	color: var(--light-gray-blue);
 }
 
-.hotel-list {
-	display: grid;
-	grid-template-rows: 151px 151px 151px 120px;
-	grid-template-columns: 1fr;
-	column-gap: 29px;
-}
-
 .hotel-list-item {
 	display: grid;
+	min-height: 151px;
 	grid-template-rows: 1fr;
 	grid-template-columns: 207px 1fr 110px;
 	column-gap: 29px;
@@ -781,6 +778,9 @@ input::-webkit-inner-spin-button {
 	-webkit-appearance: none;
 }
 
+input::-moz-placeholder { color: black; }
+input::-webkit-input-placeholder { color: black; }
+
 .search-parameter-text { 
 	font-size: 14px;
 	line-height: 26px;
@@ -906,6 +906,7 @@ input::-webkit-inner-spin-button {
 .star {
 	width: 19px;
 	height: 17px;
+	background-color: var(--white);
 	background-image: url(../img/icon-star.svg);
 	background-position: 50% 50%;
 	background-repeat: no-repeat;
@@ -926,7 +927,6 @@ input::-webkit-inner-spin-button {
 }
 
 .hotel-search-filter {
-	height: 217px;
 	background-color: var(--gray-blue);
 	background-image: url(../img/mountain-view-blur.jpg);
 	background-repeat: no-repeat;
@@ -973,6 +973,7 @@ input::-webkit-inner-spin-button {
 	top: 0;
 	width: 27px;
 	height: 23px;
+	background-color: transparent;
 	background-image: url(../img/icon-checkbox-off.svg);
 	background-repeat: no-repeat;
 	background-position: 0% 50%;
@@ -999,6 +1000,7 @@ input::-webkit-inner-spin-button {
 	top: 0;
 	width: 27px;
 	height: 23px;
+	background-color: transparent;
 	background-image: url(../img/icon-checkbox-on.svg);
 	background-repeat: no-repeat;
 	background-position: 0% 50%;
@@ -1009,10 +1011,12 @@ input::-webkit-inner-spin-button {
 }
 
 .checkbox:checked:disabled + .list-item::after {
+	background-color: transparent;
 	background-image: url(../img/icon-checkbox-on-disabled.svg);
 }
 
 .checkbox:disabled + .list-item::before {
+	background-color: transparent;
 	background-image: url(../img/icon-checkbox-off-disabled.svg);
 }
 
