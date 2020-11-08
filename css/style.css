@@ -1207,15 +1207,15 @@ input::-webkit-input-placeholder {
 	line-height: 21px;
 	border: 2px solid var(--white);
 	border-radius: 2px;
-	margin: 0 auto auto 86px;
+	margin: 149px auto auto 86px;
 	width: 137px;
 	height: 36px;
 	text-align: center;
 	padding: 0;
 	align-self: center;
 	cursor: pointer;
-	grid-row-start: 2;
-	grid-row-end: 3;
+	grid-row-start: 1;
+	grid-row-end: 2;
 	grid-column-start: 4;
 	grid-column-end: 5;
 }
