@@ -14,11 +14,9 @@
 	<div class="page-body">
 		<header class="header">
 			<nav class="navigation">
-				<div class="link-logo">
-					<a class="link">
-						<img src="img/logo-sedona.svg" alt="Логотип сервиса по бронированию гостиниц в Седоне" width="138" height="70">
-					</a>
-				</div>
+				<a class="link link-logo">
+					<img src="img/logo-sedona.svg" alt="Логотип сервиса по бронированию гостиниц в Седоне" width="138" height="70">
+				</a>
 
 				<ul class="site-navigation list">
 					<li class="site-navigation-item"><a href="#" class="link">Информация</a></li>
@@ -54,7 +52,7 @@
 							</div>
 							<img src="img/sedona-view.jpg" class="item-city-picture" height="256" width="800" alt="Вид городка Седона">
 						</div>
-						<ul class="reason-list list">
+						<ul class="reason-inner-list list">
 							<li>
 								<div class="reason-list-item">
 									<div class="item-city-house"></div>
@@ -116,14 +114,11 @@
 
 			<section class="search-hotel">
 				<h2 class="hidden">Поиск гостиницы в Седоне</h2>
-				<div class="search-text">
-					<p class="search-hotel-title">Заинтересовались?</p>
-					<p class="search-hotel-description">Укажите предполагаемые даты поездки, <br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-				</div>
-				<a href="#" class="link button button-action button-search" aria-label="Перейти на страницу поиска гостиниц">Поиск гостиницы в Седоне</a>
-				<img src="img/map.png" class="search-map" alt="Карта с указанием местоположения Седоны" width="1200" height="594">
-
-				<div class="search-popup">
+				<p class="search-hotel-title">Заинтересовались?</p>
+				<p class="search-hotel-description">Укажите предполагаемые даты поездки, <br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+				<div class="popup">
+					<a href="form.html" class="link button button-action button-search" aria-label="Перейти на страницу поиска гостиниц">Поиск гостиницы в Седоне</a>
+				 	<div class="search-popup">
 					<form action="https://echo.htmlacademy.ru" class="search-form search-form-wrapper" method="get">
 						<div class="search-form-parameter">
 							<p class="search-parameter-text background-long">
@@ -172,7 +167,9 @@
 						<button class="button button-info button-find" type="submit" aria-label="Перейти на страницу c результатами поиска гостиниц">Найти</button>
 
 					</form>
+					</div>
 				</div>
+				<img src="img/map.png" class="search-map" alt="Карта с указанием местоположения Седоны" width="1200" height="594">
 			</section>
 		</main>
 
