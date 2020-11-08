@@ -1210,9 +1210,9 @@ input::-webkit-input-placeholder {
 	margin: 149px auto auto 86px;
 	width: 137px;
 	height: 36px;
-	text-align: center;
-	padding: 0;
-	align-self: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	cursor: pointer;
 	grid-row-start: 1;
 	grid-row-end: 2;
